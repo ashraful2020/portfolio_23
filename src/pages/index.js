@@ -1,0 +1,6 @@
+export { default as Home } from "./home/Home.js"
+export { default as About } from "./about/About.js"
+export { default as Contact } from "./contact/Contact.js"
+export { default as Blog } from "./blog/BlogPage.js"
+export { default as NotFound } from "./error/NotFound.js"
+export { default as Project } from "./projects/Project.js"

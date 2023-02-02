@@ -2,5 +2,11 @@
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#37505b",
     "activityBar.background": "#37505b"
+  },
+  "material-icon-theme.folders.associations": {
+    "contact": "messages",
+    "NotFound": "private",
+    "blog": "Azure-pipelines",
+    "about": "coverage"
   }
 }
