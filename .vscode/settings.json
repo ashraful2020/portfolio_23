@@ -3,10 +3,24 @@
     "titleBar.activeBackground": "#37505b",
     "activityBar.background": "#37505b"
   },
+  
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Tomorrow Night Blue",
+
   "material-icon-theme.folders.associations": {
     "contact": "messages",
     "NotFound": "private",
     "blog": "Azure-pipelines",
-    "about": "coverage"
+    "about": "coverage",
+    "sidebar":"mjml",
+    "heroSection":"constant",
+    "hero":"constant",
+    "Anim":"Animation",
+    "BlastAnim":"Animation",
+    "BlastAnimation":"Animation",
+    "Blast":"Animation",
+    "allThemeTemplate":"theme",
+    "ThemeTemplate":"theme",
+    "ThemingTemplate":"theme",
   }
 }

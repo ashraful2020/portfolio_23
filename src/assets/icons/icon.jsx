@@ -223,7 +223,7 @@ function Icon() {
           d="M202 159l2 2-2-2m96 0l1 1-1-1m-110 1l1 1-1-1z"
         ></path>
         <path
-          className="logo_background"
+          className="logo_background logo_background-2"
           d="M202 160c-6.096 10.701-14.803 19.784-20.111 31-14.172 29.943-11.373 62.569-4.889 94h62l-23.291-81L202 160z"
         ></path>
         <path className="logo_background" d="M299 160l1 1-1-1z"></path>

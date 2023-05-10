@@ -1,0 +1,6 @@
+export { default as About } from "./icons/about"
+export { default as Blog } from "./icons/blog"
+export { default as Contact } from "./icons/contact"
+export { default as Home } from "./icons/home"
+export { default as Project } from "./icons/project"
+export { default as Icon } from "./icons/icon"

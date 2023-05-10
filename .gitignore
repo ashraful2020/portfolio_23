@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# i will remove it after some uses
+/src/data
+/src/components
+/src/utils
+/src/hooks
+
 # testing
 /coverage
 
