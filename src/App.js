@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeTemplate, Sidebar } from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Sidebar, ThemeTemplate } from "./components";
 
 // All routes
-import { Home, About, Project, Blog, Contact, NotFound } from "./pages";
+import { About, Blog, Contact, Home, NotFound, Project } from "./pages";
 
 const App = () => {
   return (
