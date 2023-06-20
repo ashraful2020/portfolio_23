@@ -10,7 +10,7 @@
 /src/components
 /src/utils
 /src/hooks
-
+/.vscode
 # testing
 /coverage
 
