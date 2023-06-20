@@ -1,0 +1,254 @@
+.first-section {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  position: relative;
+  width: 100%;
+}
+.hero-container {
+  display: flex;
+}
+.hero-page h1 {
+  font-size: 2.5em;
+  line-height: 2rem;
+  letter-spacing: -50px; 
+  font-weight: 700;
+  color: var(--color-tem);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+ 
+ 
+
+.first-section .text-desc {
+  font-size: 1em;
+  margin: 30px 0;
+  letter-spacing: 2px;
+  animation: fadeIn 1s 1.4s backwards;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  max-width: 200px;
+  line-height: 50px;
+  position: relative;
+  margin: 50px 0;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+}
+
+.contact-btn div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 15px 0 15px;
+}
+
+.contact-btn span.bg {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  transform: skewX(-10deg);
+  transition: all 0.3s linear;
+}
+
+.contact-btn:hover span.bg {
+  background: var(--color-tem);
+  width: 110%;
+  border-radius: 0 15px 0 15px;
+}
+
+.contact-btn span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 15px 0 15px;
+  border: 1px solid var(--color-tem);
+}
+
+.contact-btn span.text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.contact-btn:hover span.text {
+  color: #2d2b2b;
+}
+
+.submit-button {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #8a8484;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:hover {
+  color: #2d2b2b;
+}
+.scroll__wrapper {
+  display: flex;
+  place-items: center;
+  transform: translate(80%, 80%);
+  position: relative;
+  color: var(--color-tem);
+  &::after {
+    content: 'scroll down';
+    position: absolute;
+    top: 0;
+    left: -8px;
+  }
+  display: none;
+}
+
+.scroll__down {
+  font-size: 4rem;
+  animation: scroll 2s ease-in alternate-reverse infinite;
+}
+.scroll__down:hover .scroll__wrapper::after {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll__wrapper {
+    display: block;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero-page h1 {
+    font-size: 10rem;
+    line-height: 9rem;
+    letter-spacing: -4px;
+  }
+  .hero-page h1 .home-logo {
+    width: 100px;
+  }
+  .first-section .text-desc {
+    font-size: 1.7em;
+  }
+}
+
+// extra large screens
+
+@media screen and (max-width: 1900px) {
+  .hero-page h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -2px;
+  }
+  .hero-page h1 .home-logo {
+    width: 60px;
+  }
+  .first-section .text-desc {
+    font-size: 1.3rem;
+  }
+}
+
+// large screens
+
+@media screen and (max-width: 1024px) {
+  .hero-page h1 {
+    font-size: 5.5rem;
+    line-height: 5rem;
+    letter-spacing: -2px;
+  }
+  .hero-page h1 .home-logo {
+    width: 60px;
+  }
+  .first-section .text-desc {
+    font-size: 1rem;
+  }
+
+  .contact-btn {
+    max-width: 220px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+// tablet screens || medium screens
+@media screen and (max-width: 768px) {
+  .first-section {
+    min-height: 100vh;
+  }
+  .hero-page h1 {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+    letter-spacing: -2px;
+  }
+  .hero-page h1 .home-logo {
+    width: 50px;
+  }
+  .first-section .text-desc {
+    font-size: 0.875rem;
+  }
+
+  .contact-btn {
+    max-width: 170px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .first-section .float-text {
+    left: 20vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .first-section {
+    min-height: 100vh;
+  }
+  .hero-page h1 {
+    font-size: 3rem;
+    line-height: 2.3rem;
+    letter-spacing: -1px;
+  }
+  .hero-page h1 .home-logo {
+    width: 30px;
+  }
+}
+
+// max-width: 450px smaller screens
+@media screen and (max-width: 450px) {
+  .hero-page h1 {
+    font-size: 2.4rem;
+    line-height: 2.3rem;
+    letter-spacing: -1px;
+  }
+  .hero-page h1 .home-logo {
+    width: 25px;
+  }
+
+  .first-section .text-desc {
+    font-size: 0.87em;
+  }
+  .contact-btn {
+    max-width: 180px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 0.95rem;
+  }
+}
